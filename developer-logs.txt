@@ -1,0 +1,97 @@
+06/08/2021
+[ 22:35 ]
+So my first thought after screening the challenge doc was
+about technology choice, actually i am comfortable with Express.js and Docker
+but Development-Integration-Deployment cycle with a docker container
+need some readings before I can jump in.
+#TODO   reading "dockerize a node app and deploy to heroku"
+        https://dev.to/pacheco/how-to-dockerize-a-node-app-and-deploy-to-heroku-3cch
+
+Ok now another thing can be cool to do, the frontend;
+usually I'm using docker-compose with different container
+for both frontend and backend web-server
+Today the strategy could be, building react files in the public
+that is going to be set with express.
+I found also the article for set up right that my idea:
+#TODO   reading "how to develop and build react app with node.js"
+        https://medium.com/bb-tutorials-and-thoughts/how-to-develop-and-build-react-app-with-nodejs-bc06fa1c18f3
+
+More stuff to figure out:
+    - Diagrams.net Architecture Diagram second the 4C standard ( XML and PNG )
+    - Diagrams.net Points of Testing Overlay
+    - Diagrams.net Deployment Diagram ( XML and PNG )
+    - Unit Tests for the APIs
+    - Integration Test for Frontend
+
+so at the end the steps for getting technological stack right could be:
+    1. Setup Node.js + Express.js + Public Folder
+    2. Setup React C.R.A. with proxy for Development, and build Folder for Production
+    3. Setup Docker Stuff for get Node App Running both Dev & Prod
+    4. Setup Mocha for unit Testing
+    5. Setup Robot Framework for Integration Testing
+    6. Understand and setup Heroku yml's settings for CI/CD
+
+Also, we can try to demonstrate some TDD initial understanding,
+so we need to write tests before code and that must be demonstrable in our commit history
+
+Ideas for completeness ( maybe i never do them but i need to dump them before )
+#TODO ideas:
+    - scripts/set-heroku-env.sh for .env.production
+    - pokemon search , pokemon random picks , pokemon favorites
+    - caching middleware and save researched pokemons
+
+ok in reading translation API docs, they are limited, but never challenge a russian dev,
+done the law found the joke: https://scrapestack.com/documentation
+we can use another free api for proxying our requests and having virtually no limits or just expanding them
+to the scraper-API's limits.
+
+So an initial user story can look like this:
+User digit the Pokémon name, the input setState in Input Functional Component
+Confirmation button onClick gon fetch()ing the request to relative url '/api/...'
+the nodejs webserver serving the fe files is the same one.
+we gonna set cors for everyone for make it accessible both by 3rd Part IP and browser clients
+we setted an endpoint '/api' before the root '/' public folder
+Catch the req,
+Getting Data from PokemonAPI ( using  fetch for Node ),
+Parse them to our format, and send the data;
+using async/await pattern we must catch errors in catch(),
+following the KISS rule maybe we can just forward the error res to client
+the frontend, that is getting the data and populate a fancy Card;
+( we must not forget a loading skeleton for make it UX appealing, maybe semantic UI framework can help in that )
+
+Btw here some Interesting thoughts about cross origin resource sharing:
+    in dev environment
+    the browser is using the react build files downloaded by our server public folder
+    for make requests by a client IP
+    in dev setup instead we are going to use the cra's node.js web server that with proxy that redirect
+    '/api...' requests to our backend node.js server,
+
+    --> Just for fun
+    we can do an experiment of setting up cors to localhost:3000
+    and make localhost:5000 accessible with ngrok,
+    making request to {ngrok-url}/api/... gonna give us errors
+    because that gonna be blocked by our cors setting
+    but our fetch() requests inside local react app are still working
+    that because they are handled by node.js webserver running on localhost:3000
+    the same webserver acting as proxy formard them to localhost:5000 that is accepting them
+    because the origin now is 'localhost:3000'
+    that's happen because frontend dev webserver is configured like that,
+    do we see the flag 'changeOrigin' set tu true :) ?
+      app.use(
+        '/api',
+        createProxyMiddleware({
+          target: 'http://localhost:5000',
+          changeOrigin: true,
+        })
+      );
+      more at: https://create-react-app.dev/docs/proxying-api-requests-in-development/
+
+By reading more about node-heroku guide there is a repo with all we need already configured regards
+a node-react full stack structure
+[01:33]
+ok steps
+Getting the boilerplate
+# git clone https://github.com/pachecoio/node-react-starter ~/WebstormProjects/pachecoio-boilerplate
+# rsync -av --exclude='.git' ~/WebstormProjects/pachecoio-boilerplate/ ~/WebstormProjects/truelayer-pokedex-api/
+
+
