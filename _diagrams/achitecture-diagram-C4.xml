@@ -1,0 +1,135 @@
+<mxfile host="Electron" modified="2021-08-07T01:53:27.154Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.6.13 Chrome/89.0.4389.128 Electron/12.0.7 Safari/537.36" etag="i7SdCH60DLUxLgMMH6BT" compressed="false" version="14.6.13" type="device">
+  <diagram id="JOAM0UfjSENI3YH4zwhr" name="Page-1">
+    <mxGraphModel dx="2031" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-3" value="&lt;b style=&quot;font-size: 16px&quot;&gt;Server&lt;br&gt;&lt;/b&gt;&lt;i&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&amp;lt; Heroku App Server Environment &amp;gt;&lt;/font&gt;&lt;/i&gt;&lt;b style=&quot;font-size: 16px&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="510" y="40" width="400" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=13;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-1" target="-ffM2yOgtFd1OkIokX4n-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=13;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-1" target="-ffM2yOgtFd1OkIokX4n-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-1" value="&lt;font&gt;&lt;b style=&quot;font-size: 16px&quot;&gt;Frontend&lt;/b&gt;&lt;br&gt;&lt;i&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&amp;lt; Production React App &amp;gt;&lt;br&gt;&lt;/font&gt;&lt;/i&gt;&lt;br&gt;It send /api/ requests&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="530" y="87" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;fontSize=13;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-2" target="-ffM2yOgtFd1OkIokX4n-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=13;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-2" target="-ffM2yOgtFd1OkIokX4n-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;fontSize=9;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-2" target="-ffM2yOgtFd1OkIokX4n-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="380" />
+              <mxPoint x="425" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=9;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-2" target="-ffM2yOgtFd1OkIokX4n-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-2" value="&lt;font&gt;&lt;b style=&quot;font-size: 16px&quot;&gt;Backend&lt;/b&gt;&lt;br&gt;&lt;i&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&amp;lt; Express.js App &amp;gt;&lt;br&gt;&lt;/font&gt;&lt;/i&gt;&lt;br&gt;It handle /api/ HTTP requests&lt;br&gt;and serves static files&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="530" y="240" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-13" target="-ffM2yOgtFd1OkIokX4n-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="154" />
+              <mxPoint x="490" y="154" />
+              <mxPoint x="490" y="263" />
+              <mxPoint x="530" y="263" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-13" value="&amp;lt;&amp;lt;&lt;i&gt;&lt;b&gt;http://{ProductionDomainUrl}&amp;nbsp;&lt;/b&gt;&lt;/i&gt;&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="180" y="130" width="265" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-15" target="-ffM2yOgtFd1OkIokX4n-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="345" />
+              <mxPoint x="490" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-15" value="&amp;lt;&amp;lt;&lt;i style=&quot;font-size: 13px&quot;&gt;&lt;b style=&quot;font-size: 13px&quot;&gt;HTTP://{ProductionDomainUrl}/api/*&lt;/b&gt;&lt;/i&gt;&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="185" y="320" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-25" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="290" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-20" value="" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-25">
+          <mxGeometry width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-8" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-25">
+          <mxGeometry x="30" y="10" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-11" value="&lt;font face=&quot;helvetica&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;3rd part&lt;br&gt;App&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-25">
+          <mxGeometry x="15" y="60" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=13;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-20" target="-ffM2yOgtFd1OkIokX4n-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=13;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-21" target="-ffM2yOgtFd1OkIokX4n-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-28" value="&amp;lt;&amp;lt;&amp;nbsp;&lt;b&gt;https://pokeapi.co/api/v2/pokemon-species/{id or name}/&lt;/b&gt; &amp;gt;&amp;gt;" style="text;whiteSpace=wrap;html=1;fontSize=13;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="230" y="399" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-30" value="&lt;font&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;3rd Party Endpoints&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;i&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&amp;lt; pokeapi.co&amp;nbsp; &amp;gt;&lt;br&gt;&lt;/font&gt;&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;It supply Pokemon&#39;s&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;text-align: center&quot;&gt;- name,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- standard desc&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- habitat&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- isLegendary status&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="325" y="470" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=9;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="-ffM2yOgtFd1OkIokX4n-35" target="-ffM2yOgtFd1OkIokX4n-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-35" value="&lt;font&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;3rd Party Endpoints&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;i&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&amp;lt; scrapestack.com&amp;nbsp; &amp;nbsp;&amp;gt;&lt;br&gt;&lt;/font&gt;&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;It gonna proxify our requests&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;for bypass public APIs limits&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="700" y="470" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-42" value="Static files are served" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="87" width="265" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-44" value="Points to client/build folder" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="710" y="179" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-47" value="&amp;lt;&amp;lt;&lt;i style=&quot;font-size: 9px;&quot;&gt;&lt;b style=&quot;font-size: 9px;&quot;&gt;HTTP://{ProductionDomainUrl}/api/*&lt;/b&gt;&lt;/i&gt;&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="540" y="193.5" width="160" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-48" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="97.50181818181818" width="100" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-21" value="" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-48">
+          <mxGeometry width="100" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-22" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-48">
+          <mxGeometry x="30" y="6.272727272727266" width="40" height="52.27272727272727" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-23" value="&lt;b style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 16px&quot;&gt;Browser&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-48">
+          <mxGeometry x="15" y="58.54545454545453" width="70" height="41.81818181818181" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-52" value="&lt;font&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;3rd Party Endpoints&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;i&gt;&lt;font&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&amp;lt; http://funtranslations.com&amp;nbsp;&amp;nbsp;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;It gonna translate requested text to&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Shakespere&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Yoda&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="940.5" y="600" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-55" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="655" y="384" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-37" value="http://api.scrapestack.com/scrape&#xa;?access_key={api_key_scrapestack}&#xa;&amp;url={translation_api_endpoint_string}" style="text;whiteSpace=wrap;fontSize=13;fontStyle=1;fillColor=#ffffff;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-55">
+          <mxGeometry x="20" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-39" value="&amp;lt;&amp;lt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-55">
+          <mxGeometry width="20" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-40" value="&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="-ffM2yOgtFd1OkIokX4n-55">
+          <mxGeometry x="270" width="20" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-ffM2yOgtFd1OkIokX4n-57" value="&amp;lt;&amp;lt; &lt;b&gt;https://funtranslations.com/api/&amp;nbsp;&lt;/b&gt;&amp;gt;&amp;gt;" style="text;whiteSpace=wrap;html=1;fontSize=13;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="920" y="510" width="241" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

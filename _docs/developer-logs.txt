@@ -43,7 +43,7 @@ Ideas for completeness ( maybe i never do them but i need to dump them before )
 ok in reading translation API docs, they are limited, but never challenge a russian dev,
 done the law found the joke: https://scrapestack.com/documentation
 we can use another free api for proxying our requests and having virtually no limits or just expanding them
-to the scraper-API's limits.
+to the scraper-API's limits. ( up to 250 )
 
 So an initial user story can look like this:
 User digit the Pokémon name, the input setState in Input Functional Component
@@ -90,8 +90,11 @@ By reading more about node-heroku guide there is a repo with all we need already
 a node-react full stack structure
 [01:33]
 ok steps
+
 Getting the boilerplate
 # git clone https://github.com/pachecoio/node-react-starter ~/WebstormProjects/pachecoio-boilerplate
 # rsync -av --exclude='.git' ~/WebstormProjects/pachecoio-boilerplate/ ~/WebstormProjects/truelayer-pokedex-api/
+
+Rip off not used stuff
 
 
