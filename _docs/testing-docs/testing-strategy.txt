@@ -1,0 +1,65 @@
+object type :   < server-behavior / API call / API response / frontend-view >
+path : < file-location {function} >
+name : < functionality-name >
+test:  < test-name >
+
+object type : server-behavior
+path : middleware/index.js {corsAllMiddleware}
+name : 'CrossOrigin is set to Permitted to All'
+test: 'requests made from a remote server should return an OK response '
+test: 'requests made from localhost should return an OK response '
+
+object type : server-behavior
+path : middleware/index.js {jsonParserMiddleware}
+name: 'requests with json content types are parsed '
+test: 'req.body should be either an array or an object'
+
+object type : server-behavior
+path : middleware/index.js {staticFilesMiddleware}
+name: 'public folder is accessible'
+dependency: 'CrossOrigin is set to Permitted to All'
+test: 'get request to localhost:5000/mock return a mock.html file'
+
+object type : server-behavior
+path : middleware/index.js {staticFilePathHandler}
+name: 'public folder files is accessible with corresponding relative url'
+dependency: 'public folder is accessible'
+test: 'get request to localhost:5000/mock-folder/mock return a mock.html file'
+
+object type : API response
+path : https://pokeapi.co
+name: 'pokeAPI GET /api/v2/pokemon-species/ endpoint is available'
+test: 'a get request to /api/v2/pokemon-species/ return a 200 status'
+
+object type : API response
+path : https://pokeapi.co
+name: 'pokeAPI GET /api/v2/pokemon-species/{id} endpoint is available'
+dependency: 'pokeAPI's GET /api/v2/pokemon-species/ endpoint is available'
+test: 'a get request to /api/v2/pokemon-species/0 return a 200 status'
+test: 'a get request to /api/v2/pokemon-species/0 return a json object compliant to the expected scheme'
+
+object type : API response
+path : routes/pokedex/v1/3rd-party/api-pokeapi/getPokemon.js
+name: 'getPokemon return the expected response body given the proper input'
+test: 'given as input the String 'Giratina' , getPokemon should return a res object with a key 'body'
+test: 'given as input the String 'Giratina' , getPokemon() return a res with body equal to mockGiratinaObj.json
+
+object type : API response
+path : routes/pokedex/v1/index.js
+name: 'GET /api/v1/pokedex/{name} endpoint is available'
+test: 'a get request to /api/v1/pokedex/Giratina return a 200 status'
+test: 'a get request to /api/v1/pokedex/Giratina return a json object compliant to the mockGiratinaObj.json scheme'
+
+object type : API response
+path : routes/pokedex/v1/index.js
+name: 'GET /api/v1/pokedex/{name} endpoint show expected error responses'
+test: 'a get request to /api/v1/pokedex/wrongstring return a 404 status'
+
+
+
+
+
+
+
+
+

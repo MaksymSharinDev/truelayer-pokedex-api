@@ -1,7 +1,7 @@
 06/08/2021
 [ 22:35 ]
 So my first thought after screening the challenge doc was
-about technology choice, actually i am comfortable with Express.js and Docker
+about technology choice, actually I am comfortable with Express.js and Docker
 but Development-Integration-Deployment cycle with a docker container
 need some readings before I can jump in.
 #TODO   reading "dockerize a node app and deploy to heroku"
@@ -29,21 +29,17 @@ so at the end the steps for getting technological stack right could be:
     3. Setup Docker Stuff for get Node App Running both Dev & Prod
     4. Setup Mocha for unit Testing
     5. Setup Robot Framework for Integration Testing
-    6. Understand and setup Heroku yml's settings for CI/CD
+    6. Understand and setup Heroku yaml's settings for CI/CD
 
 Also, we can try to demonstrate some TDD initial understanding,
 so we need to write tests before code and that must be demonstrable in our commit history
-
-Ideas for completeness ( maybe i never do them but i need to dump them before )
-#TODO ideas:
-    - scripts/set-heroku-env.sh for .env.production
-    - pokemon search , pokemon random picks , pokemon favorites
-    - caching middleware and save researched pokemons
 
 ok in reading translation API docs, they are limited, but never challenge a russian dev,
 done the law found the joke: https://scrapestack.com/documentation
 we can use another free api for proxying our requests and having virtually no limits or just expanding them
 to the scraper-API's limits. ( up to 250 )
+considering the limit of requests of translation API, 60/day and 5/hour,
+maybe we can implement the function to an proxifyed access the limit reached error
 
 So an initial user story can look like this:
 User digit the Pokémon name, the input setState in Input Functional Component
@@ -94,7 +90,41 @@ ok steps
 Getting the boilerplate
 # git clone https://github.com/pachecoio/node-react-starter ~/WebstormProjects/pachecoio-boilerplate
 # rsync -av --exclude='.git' ~/WebstormProjects/pachecoio-boilerplate/ ~/WebstormProjects/truelayer-pokedex-api/
+gonna Rip off not used stuff
 
-Rip off not used stuff
+
+[11:00]
+for first we need to implement basic middlewares
+for keep /index.js clean and semantic we going to do that in another file and import them
+for first we set cors to allow all by default,
+after we use json parser for expose a ready object in req.body
+and we mount the api Router
+at the end conditionally to production state,
+we're going to expose the static files' folder for not handled routes,
+in an " url -> file-path mapping "
+
+I scope api request to /api  route and set an api versioning
+that for maintain compatibility
+the api updates don't gonna broke frontend/3rd-party ability to access data
+that reflected also by our folder structure /routes/domain/v{N}/
+breaking api updates (like changes to data-model) must be done inside a /routes/domain/v{N+1}/
+
+for being scoped to
+we are moving cors settings middleware to
+single services ( pokedex router ) and
+public folder files
+
+[11:38]
+DRW rule!
+we found a wrapper to PokeAPI --> https://github.com/PokeAPI/pokedex-promise-v2
+we gonna use that for Don't Reinvent the wheel
+
+
+
+
+
+
+
+
 
 

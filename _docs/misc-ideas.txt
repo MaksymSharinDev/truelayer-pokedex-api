@@ -1,0 +1,12 @@
+Ideas for completeness ( maybe i never do them but i need to dump them before )
+#TODO ideas:
+    - scripts/set-heroku-env.sh for .env.production
+    - pokemon search , pokemon random picks , pokemon favorites
+    - caching middleware and save researched pokemons
+#TODO more ideas
+    - the translation microservice: rewrite it in rust + rocket,
+      use cors for restrict to pokedex microservice access
+    - the frontend: decouple from and set up a NGINX proxy along
+    - pokedex microservice: decouple, restrict cors to accepting only frontend microservice connection
+    - implement gRPC in for translation and pokedex microservices
+    - use Kompose for generate kubernetes pods with docker-compose
